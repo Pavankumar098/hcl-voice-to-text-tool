@@ -1,0 +1,382 @@
+* Add this CSS to your existing styles.css file */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.box {
+  background-blend-mode: #fdf8f8; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  margin-left: 500px;
+  margin-bottom: 25px;
+  width: 500px;
+text-align: center;
+}
+.box1{
+  width: 1000px;
+  height: 4cm;
+  text-align: center;
+  margin-left: 220px;
+  word-wrap: inherit;
+  ::-webkit-scrollbar {
+    width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #888;
+    }
+   
+}
+
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  }
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 0.5px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #e93838;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-left:15px;
+  margin-top:5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+ 
+}
+.type {
+  margin: 10px;
+}
+input{
+  text-align: center;
+}
+
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #38cef0;
+}
+
+p {
+  font-size: 16px;
+}
+.heading2{
+  font-size: 2rem;
+}
+
+span {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.eachItem {
+  margin: 10px 0;
+}
+
+/* Neon button styles */
+
+.neon-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #38cef0, #5800ff);
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.neon-button:before,
+.neon-button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.neon-button:before {
+  top: 0;
+  left: -30%;
+  animation: neon-glow 1.5s infinite linear;
+}
+
+.neon-button:after {
+  top: 0;
+  right: -30%;
+  animation: neon-glow 1.5s infinite linear 0.5s;
+}
+
+@keyframes neon-glow {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.3);
+  }
+}
+/* Add this CSS to your App.css file or any CSS file you're using */
+
+textarea {
+  height: 100px; /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrollbar when content overflows */
+  resize: vertical; /* Allow vertical resizing */
+  margin-top: 15px;
+
+}
+.columnWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnWrapper p {
+  margin: 5px 0;
+}
+.eachItem {
+  max-height: 200px; /* Set a maximum height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+/* Add this to your existing App.css or a new CSS file */
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+/* Styles for light theme */
+.light-theme {
+  background-image: url(../public/light\ image.png);
+  background-position: center center; /* Center the background */
+  background-repeat: no-repeat; /* Prevent background from repeating */
+  background-size: cover; /* Ensure the background covers the entire container */
+  color: #0dd6ed;
+}
+
+/* Styles for dark theme */
+.dark-theme {
+  background-image:url(../public/dark\ image.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+
+
+/* Rest of your existing styles */
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: inherit;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: lighting 1ms infinite alternate;
+}
+
+/* Add more styles based on your specific design and requirements */
+
+/* Toggle button styles */
+.theme-toggle {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  
+}
+
+/* Icon styles */
+.theme-icon {
+  font-size: 24px;
+ 
+}
+
+/* Add more dark theme styles based on your specific design and requirements */
+/* Add to your existing CSS or a new CSS file */
+
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+.heading1{
+  margin-top: -90px;
+  
+}
+.heading{
+  font-size: 2rem;
+}
+
+/* Styles for the search bar */
+.search-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 0 5px 5px 0;
+  background-blend-mode: black;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: white;
+}
+
+.highlight {
+  color: #38cef0;
+  font-weight: bold;
+}
+
+/* Add this CSS to your existing CSS file or create a new one */
+
+/* Style for audio controls */
+.audio-controls {
+  margin-top: 10px;
+}
+
+.audio-controls button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.audio-controls button:hover {
+  background-color: #24f7f7;
+  color: #ffffff;
+}
+
+/* Keyframe animation for pulse effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply pulse animation to the buttons on hover */
+.audio-controls button:hover {
+  animation: pulse 0.6s ease infinite;
+}
+
+/* Example styles for the heading */
+.heading1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ... (other styles) */
+.textView {
+  width: 100%;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+}
+/* ... (other existing styles) */
+
+/* Glowing border effect for the textarea */
+#glowing-textarea {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  border: 2px solid transparent; /* Initial border */
+  outline: none;
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+  font-family: inherit;
+  transition: border-color 0.5s;
+}
+
+/* Add border glow if textarea is focused or contains text */
+#glowing-textarea:focus,
+#glowing-textarea:valid {
+  border-color: rgb(42, 212, 246);
+}
+
+/* Keyframe animation for the border glow */
+@keyframes borderGlow {
+  0% {
+    border-color: rgb(42, 212, 246);
+  }
+  100% {
+    border-color: rgb(42, 212, 246);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
